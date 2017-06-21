@@ -6,11 +6,12 @@
     font-family: 'OpenSans';
     src: url("../fonts/OpenSans-Regular.ttf");
 }
+
+/************* GENERAL *************/
 body {
     background: #7BB6D9;
     font-family: 'OpenSans';
 }
-
 .top-bar {
     height: 40px;
 }
@@ -20,18 +21,6 @@ body {
     text-align: right;
     display: block;
 }
-
-/* HOME */
-.coin-image {
-    position: absolute;
-    width: 72px;
-    top: 50%;
-    left: 50%;
-    margin-top: -35px;
-    margin-left: -36px;
-}
-
-/* BILL */
 .title-wrapper {
     margin-top: 18px;
     margin-bottom: 16px;
@@ -40,7 +29,9 @@ body {
     text-align: center;
     margin: 0;
     color: #FFFFFF;
-    font-weight: 600;
+}
+.title-wrapper.left p {
+    text-align: left;
 }
 .page-title {
     font-size: 15px;
@@ -55,10 +46,28 @@ body {
     box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12);
     padding: 24px 12px 16px 12px;
 }
+
+
+
+/************* HOME *************/
+.coin-image {
+    position: absolute;
+    width: 72px;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -36px;
+}
+
+
+
+/************* BILL *************/
+/* Bill container */
 .bill-title {
     text-align: center;
     font-weight: 600;
     margin: 8px 0px 16px 0px;
+    font-weight: 600;
 }
 .bill-item-wrapper,
 .bill-tax-wrapper,
@@ -85,6 +94,7 @@ body {
     color: rgba(0,0,0,0.5);
 }
 
+/* Bill barcode container */
 .segment-raised.barcode {
     border-top: 1px dashed rgba(0,0,0,0.5);
 }
@@ -97,6 +107,8 @@ body {
     margin: 4px auto;
 }
 
+
+/* Bill bottom link */
 .split-bill-link-wrapper {
     color: #FFFFFF;
     text-align: center;
@@ -110,7 +122,68 @@ body {
     color: #FFFFFF;
 }
 
-/* HELPER */
+
+
+/************* SPLIT BILL *************/
+.split-bill-info {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: left;
+}
+.check-bill-wrapper {
+    margin-top: 4px;
+}
+.checkbox-wrapper {
+    padding-top: 14px;
+}
+.segment-raised.bill-item-check,
+.segment-raised.bill-item-detail {
+    padding: 16px;
+    width: 95%;
+}
+.segment-raised.bill-item-check p {
+    margin: 0;
+}
+
+.segment-raised.bill-item-detail {
+    border-top: 1px dashed rgba(0,0,0,0.5);
+    margin: 0;
+}
+.bill-item-detail input {
+    width: 28px;
+    border: 1px solid #F6A623;
+    height: 22px;
+    text-align: center;
+}
+.minus-button,
+.plus-button {
+    background: #F6A623;
+    border: 1px solid #F6A623;
+    color: #FFFFFF;
+    padding: 0px 6px;
+}
+.plus-button {
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -4px;
+}
+.minus-button {
+    border-radius: 4px 0px 0px 4px;
+    margin-right: -4px;
+}
+.bill-item-detail span {
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+    margin-left: 4px;
+}
+.bill-item-detail p {
+    margin: 0;
+    font-weight: 600;
+    text-align: right;
+    color: #F6A623;
+    padding-top: 2px;
+}
+
+/************* HELPER *************/
 .no-padding {
     padding: 0;
 }
@@ -119,4 +192,7 @@ body {
 }
 .no-padding-right {
     padding-right: 0;
+}
+.text-bold {
+    font-weight: bold;
 }

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-12 top-bar">
+            <a href="index.html">&times;</a>
+        </div>
+
+        <div class="col-xs-12 title-wrapper left">
+            <p class="page-title"><span class="text-bold">Elephant Resto:</span> Today's Bill</p>
+            <p class="bill-date text-bold">JUNE 8, 2017</p>
+        </div>
+
+        <div class="col-xs-12">
+            <p class="split-bill-info">Select on purchased item(s).</p>
+
+            <div class="row check-bill-wrapper">
+                <div class="col-xs-2 checkbox-wrapper">
+                    <input type="checkbox" id="check" name="check" value="" checked />
+                    <label for="check"><span></span></label>
+                </div>
+                <div class="col-xs-10 no-padding">
+                    <div class="segment-raised bill-item-check">
+                        <p>Ayam Penyet Bludus</p>
+                    </div>
+                    <div class="row segment-raised bill-item-detail">
+                        <div class="col-xs-6 no-padding">
+                            <button class="minus-button">-</button>
+                            <input type="number" name="billItemQty" value="1" min="1">
+                            <button class="plus-button">+</button>
+                            <span>of 1</span>
+                        </div>
+                        <div class="col-xs-6 no-padding">
+                            <p>35,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row check-bill-wrapper">
+                <div class="col-xs-2 checkbox-wrapper">
+                    <input type="checkbox" id="check2" name="check" value="" />
+                    <label for="check2"><span></span></label>
+                </div>
+                <div class="col-xs-10 no-padding">
+                    <div class="segment-raised bill-item-check">
+                        <p>Ayam Penyet Bludus</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+        </div>
+        
+    </div>
+    
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

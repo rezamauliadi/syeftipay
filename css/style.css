@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+body {
+    background: #7BB6D9;
+    font-family: 'OpenSans';
+}
+
+.top-bar {
+    height: 40px;
+}
+.top-bar a {
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: right;
+    display: block;
+}
+
+/* HOME */
+.coin-image {
+    position: absolute;
+    width: 72px;
+    top: 50%;
+    left: 50%;
+    margin-top: -35px;
+    margin-left: -36px;
+}
+
+/* BILL */
+.title-wrapper {
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+.title-wrapper p {
+    text-align: center;
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.page-title {
+    font-size: 15px;
+}
+.bill-date {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.segment-raised {
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12);
+    padding: 24px 12px 16px 12px;
+}
+.bill-title {
+    text-align: center;
+    font-weight: 600;
+    margin: 8px 0px 16px 0px;
+}
+.bill-item-wrapper,
+.bill-tax-wrapper,
+.bill-total-wrapper {
+    margin-top: 16px;
+}
+.bill-item {
+    margin-top: 2px;
+}
+.bill-item-qty {
+    font-weight: 600;
+}
+.bill-item-price {
+    font-weight: 600;
+    text-align: right;
+}
+.bill-total {
+    font-weight: 600;
+    margin: 0;
+}
+.bill-total-info {
+    font-size: 12px;
+    margin: 0;
+    color: rgba(0,0,0,0.5);
+}
+
+.segment-raised.barcode {
+    border-top: 1px dashed rgba(0,0,0,0.5);
+}
+.bill-barcode-wrapper {
+    text-align: center;
+}
+.bill-barcode-wrapper p {
+    font-size: 12px;
+    width: 80%;
+    margin: 4px auto;
+}
+
+.split-bill-link-wrapper {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 8px;
+}
+.split-bill-link-wrapper p {
+    margin: 0;
+}
+.split-bill-link-wrapper a {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+/* HELPER */
+.no-padding {
+    padding: 0;
+}
+.no-padding-left {
+    padding-left: 0;
+}
+.no-padding-right {
+    padding-right: 0;
+}

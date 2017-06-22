@@ -132,22 +132,30 @@ body {
 }
 .check-bill-wrapper {
     margin-top: 4px;
+    position: relative;
 }
 .checkbox-wrapper {
-    padding-top: 14px;
+    padding-top: 16px;
 }
 .segment-raised.bill-item-check,
 .segment-raised.bill-item-detail {
-    padding: 16px;
     width: 95%;
 }
 .segment-raised.bill-item-check p {
     margin: 0;
 }
+.segment-raised.bill-item-check {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    padding: 18px 16px;
+}
 
 .segment-raised.bill-item-detail {
     border-top: 1px dashed rgba(0,0,0,0.5);
     margin: 0;
+    padding: 16px;
+    transition: 0.3s;
 }
 .bill-item-detail input {
     width: 28px;
@@ -181,6 +189,13 @@ body {
     text-align: right;
     color: #F6A623;
     padding-top: 2px;
+}
+.bill-item-detail-showed {
+    margin-top: 56px !important;
+    transition: 0.5s;
+}
+.bill-item-check-showed {
+    box-shadow: none;
 }
 
 /* PAY */

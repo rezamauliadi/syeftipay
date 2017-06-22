@@ -42,6 +42,8 @@ function showBillDetail(){
     checkboxWrapper.find('.bill-item-detail').removeClass('bill-item-detail-showed');
     checkboxWrapper.find('.bill-item-check').removeClass('bill-item-check-showed');
   }
+
+  recalculateTotalPrice();
 }
 
 function calculateItemDetailPrice(inputField, qttInputVal){
@@ -52,24 +54,9 @@ function calculateItemDetailPrice(inputField, qttInputVal){
   return itemPrice;
 }
 
-(function ( $ ) {
- 
-    $.fn.formatPriceNumber = function() {
-      this.each(function(){
-        var thisPrice = $( this );
-        thisPrice.text(thisPrice.text().toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
-      });
-      return this;
-    };
-
-    $.fn.toInteger = function(attr) {
-      var value = 0;
-      if(attr != null){
-        value = this.attr(attr);
-      } else {
-        value = this.filter('input').length != 0 ? this.val() : this.text();
-      }
-      return parseInt(value.replace(/[^0-9]/g,''), 10);
-    };
- 
-}( jQuery ));
+function recalculateTotalPrice(){
+  $('input[type=checkbox]:checked').each(function(){
+    var itemBillPrice = $(this).find('.bill-item-detail-price').toInteger();
+    console.log(itemBillPrice);
+  });
+}

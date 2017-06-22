@@ -5,6 +5,8 @@ $(function(){
   $(document).on('click', '.bill-item-check', checkBillItem);
   $(document).on('change', 'input[type=checkbox]', showBillDetail);
 
+  $('input[type=checkbox]').prop('checked',false);
+
   $('.format-number').formatPriceNumber();
 });
 
@@ -15,14 +17,18 @@ function subInputNumber(){
   qttInput.val(qttInputVal);
 
   calculateItemDetailPrice(qttInput, qttInputVal).formatPriceNumber();
+  recalculateTotalPrice();
 }
 
 function addInputNumber(){
   var qttInput = $(this).closest('.bill-item-detail').find('input');
+  var qttInputMax = qttInput.toInteger('max');
   var qttInputVal = qttInput.toInteger() + 1;
+  qttInputVal = qttInputVal > qttInputMax ? qttInputMax : qttInputVal;
   qttInput.val(qttInputVal);
   
   calculateItemDetailPrice(qttInput, qttInputVal).formatPriceNumber();
+  recalculateTotalPrice();
 }
 
 function checkBillItem(){
@@ -42,7 +48,6 @@ function showBillDetail(){
     checkboxWrapper.find('.bill-item-detail').removeClass('bill-item-detail-showed');
     checkboxWrapper.find('.bill-item-check').removeClass('bill-item-check-showed');
   }
-
   recalculateTotalPrice();
 }
 
@@ -55,8 +60,10 @@ function calculateItemDetailPrice(inputField, qttInputVal){
 }
 
 function recalculateTotalPrice(){
+  var totalPrice = 0;
   $('input[type=checkbox]:checked').each(function(){
-    var itemBillPrice = $(this).find('.bill-item-detail-price').toInteger();
-    console.log(itemBillPrice);
+    var itemBillPrice = $(this).closest('.check-bill-wrapper').find('.bill-item-detail-price').toInteger();
+    totalPrice += itemBillPrice;
   });
+  $('.total-item-price').text(totalPrice).formatPriceNumber();
 }

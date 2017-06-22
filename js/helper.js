@@ -2,7 +2,7 @@
  
     $.fn.formatPriceNumber = function() {
       this.each(function(){
-        var thisPrice = $( this );
+        var thisPrice = $(this);
         thisPrice.text(thisPrice.text().toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
       });
       return this;

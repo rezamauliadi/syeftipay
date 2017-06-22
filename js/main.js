@@ -1,3 +1,10 @@
+// $("#example-basic").steps({
+//     headerTag: "h3",
+//     bodyTag: "section",
+//     transitionEffect: "slideLeft",
+//     autoFocus: true
+// });
+
 $(function(){
   $(document).on('click', '.minus-button', subInputNumber);
   $(document).on('click', '.plus-button', addInputNumber);

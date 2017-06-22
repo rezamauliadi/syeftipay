@@ -183,6 +183,38 @@ body {
     padding-top: 2px;
 }
 
+/* PAY */
+.bill-item-price-pay {
+    font-weight: 600;
+    text-align: right;
+    color: #F6A623;
+}
+.button{
+    background-color: #F6A623;
+    width: 244px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    text-decoration: none !Important;
+    vertical-align: middle;
+    line-height: 2.5;
+    margin-top: 24px;
+}
+.title-wrapper-pay {
+    margin-top: 18px;
+    margin-bottom: 16px;
+    padding-left: 0px;
+}
+.title-wrapper-pay p {
+    text-align: left;
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
 /************* HELPER *************/
 .no-padding {
     padding: 0;
@@ -196,3 +228,4 @@ body {
 .text-bold {
     font-weight: bold;
 }
+

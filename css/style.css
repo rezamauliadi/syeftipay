@@ -254,20 +254,6 @@ body {
     font-weight: 600;
 }
 
-/************* HELPER *************/
-.no-padding {
-    padding: 0;
-}
-.no-padding-left {
-    padding-left: 0;
-}
-.no-padding-right {
-    padding-right: 0;
-}
-.text-bold {
-    font-weight: bold;
-}
-
 /* SPENDING */
 .title-spending p{
     font-size: 40px;
@@ -294,4 +280,46 @@ body {
     width: 120px;
     height: 10px;
     margin-top: -10px;
+}
+.spent-list{
+    background-color: #FFFFFF;
+    position: relative;
+}
+.spent-list-item{
+    padding: 16px 16px;
+}
+.round-category{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #F07272;
+}
+.overview{
+    /*position: absolute;*/
+}
+.spent-val{
+    text-align: right;
+    color: #EC6161;
+}
+.category{
+    font-size: 14px;
+    color: #9B9B9B;
+}
+.spent-item{
+    font-size: 16px;
+}
+
+
+/************* HELPER *************/
+.no-padding {
+    padding: 0;
+}
+.no-padding-left {
+    padding-left: 0;
+}
+.no-padding-right {
+    padding-right: 0;
+}
+.text-bold {
+    font-weight: bold;
 }

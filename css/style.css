@@ -1,62 +1,62 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url("../fonts/Roboto-Medium.ttf");
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Medium.ttf");
 }
 @font-face {
-    font-family: 'OpenSans';
-    src: url("../fonts/OpenSans-Regular.ttf");
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 /************* GENERAL *************/
 body {
-    background: #7BB6D9;
-    font-family: 'OpenSans';
+  background: #7BB6D9;
+  font-family: 'OpenSans';
 }
 .top-bar {
-    height: 40px;
+  height: 40px;
 }
 .top-bar a {
-    color: #FFFFFF;
-    font-size: 40px;
-    text-align: right;
-    display: block;
+  color: #FFFFFF;
+  font-size: 40px;
+  text-align: right;
+  display: block;
 }
 .title-wrapper {
-    margin-top: 18px;
-    margin-bottom: 16px;
+  margin-top: 18px;
+  margin-bottom: 16px;
 }
 .title-wrapper p {
-    text-align: center;
-    margin: 0;
-    color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  color: #FFFFFF;
 }
 .title-wrapper.left p {
-    text-align: left;
+  text-align: left;
 }
 .page-title {
-    font-size: 15px;
+  font-size: 15px;
 }
 .bill-date {
-    font-size: 12px;
-    text-transform: uppercase;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 .segment-raised {
-    background: #FFFFFF;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12);
-    padding: 24px 12px 16px 12px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(34, 36, 38, 0.12);
+  padding: 24px 12px 16px 12px;
 }
 
 
 
 /************* HOME *************/
 .coin-image {
-    position: absolute;
-    width: 72px;
-    top: 50%;
-    left: 50%;
-    margin-top: -35px;
-    margin-left: -36px;
+  position: absolute;
+  width: 72px;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -36px;
 }
 
 
@@ -64,262 +64,293 @@ body {
 /************* BILL *************/
 /* Bill container */
 .bill-title {
-    text-align: center;
-    font-weight: 600;
-    margin: 8px 0px 16px 0px;
-    font-weight: 600;
+  text-align: center;
+  font-weight: 600;
+  margin: 8px 0px 16px 0px;
+  font-weight: 600;
 }
 .bill-item-wrapper,
 .bill-tax-wrapper,
 .bill-total-wrapper {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 .bill-item {
-    margin-top: 2px;
+  margin-top: 2px;
 }
 .bill-item-qty {
-    font-weight: 600;
+  font-weight: 600;
 }
 .bill-item-price {
-    font-weight: 600;
-    text-align: right;
+  font-weight: 600;
+  text-align: right;
 }
 .bill-total {
-    font-weight: 600;
-    margin: 0;
+  font-weight: 600;
+  margin: 0;
 }
 .bill-total-info {
-    font-size: 12px;
-    margin: 0;
-    color: rgba(0,0,0,0.5);
+  font-size: 12px;
+  margin: 0;
+  color: rgba(0,0,0,0.5);
 }
 
 /* Bill barcode container */
 .segment-raised.barcode {
-    border-top: 1px dashed rgba(0,0,0,0.5);
+  border-top: 1px dashed rgba(0,0,0,0.5);
 }
 .bill-barcode-wrapper {
-    text-align: center;
+  text-align: center;
 }
 .bill-barcode-wrapper p {
-    font-size: 12px;
-    width: 80%;
-    margin: 4px auto;
+  font-size: 12px;
+  width: 80%;
+  margin: 4px auto;
 }
 
 
 /* Bill bottom link */
 .split-bill-link-wrapper {
-    color: #FFFFFF;
-    text-align: center;
-    margin-top: 8px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 8px;
 }
 .split-bill-link-wrapper p {
-    margin: 0;
+  margin: 0;
 }
 .split-bill-link-wrapper a {
-    text-decoration: underline;
-    color: #FFFFFF;
+  text-decoration: underline;
+  color: #FFFFFF;
 }
 
 
 
 /************* SPLIT BILL *************/
 .split-bill-info {
-    color: #FFFFFF;
-    font-size: 12px;
-    text-align: left;
+  color: #FFFFFF;
+  font-size: 12px;
+  text-align: left;
 }
 .check-bill-wrapper {
-    margin-top: 4px;
-    position: relative;
+  margin-top: 4px;
+  position: relative;
 }
 .checkbox-wrapper {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 .segment-raised.bill-item-check,
 .segment-raised.bill-item-detail {
-    width: 95%;
+  width: 95%;
 }
 .segment-raised.bill-item-check p {
-    margin: 0;
+  margin: 0;
 }
 .segment-raised.bill-item-check {
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    padding: 18px 16px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding: 18px 16px;
 }
 
 .segment-raised.bill-item-detail {
-    border-top: 1px dashed rgba(0,0,0,0.5);
-    margin: 0;
-    padding: 16px;
-    transition: 0.3s;
+  border-top: 1px dashed rgba(0,0,0,0.5);
+  margin: 0;
+  padding: 16px;
+  transition: 0.3s;
 }
 .bill-item-detail input {
-    width: 28px;
-    border: 1px solid #F6A623;
-    height: 22px;
-    text-align: center;
+  width: 28px;
+  border: 1px solid #F6A623;
+  height: 22px;
+  text-align: center;
 }
 .minus-button,
 .plus-button {
-    background: #F6A623;
-    border: 1px solid #F6A623;
-    color: #FFFFFF;
-    padding: 0px 6px;
+  background: #F6A623;
+  border: 1px solid #F6A623;
+  color: #FFFFFF;
+  padding: 0px 6px;
 }
 .plus-button {
-    border-radius: 0px 4px 4px 0px;
-    margin-left: -4px;
+  border-radius: 0px 4px 4px 0px;
+  margin-left: -4px;
 }
 .minus-button {
-    border-radius: 4px 0px 0px 4px;
-    margin-right: -4px;
+  border-radius: 4px 0px 0px 4px;
+  margin-right: -4px;
 }
 .bill-item-detail span {
-    font-size: 12px;
-    color: rgba(0,0,0,0.5);
-    margin-left: 4px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.5);
+  margin-left: 4px;
 }
 .bill-item-detail p {
-    margin: 0;
-    font-weight: 600;
-    text-align: right;
-    color: #F6A623;
-    padding-top: 2px;
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+  color: #F6A623;
+  padding-top: 2px;
 }
 .bill-item-detail-showed {
-    margin-top: 56px !important;
-    transition: 0.5s;
+  margin-top: 56px !important;
+  transition: 0.5s;
 }
 .bill-item-check-showed {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .bill-detail-total {
-    position: absolute;
-    bottom: 0;
-    height: 60px;
-    background: #F6A623;
-    z-index: 5;
-    box-shadow: 0px -4px 4px 0px rgba(34, 36, 38, 0.12);
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  background: #F6A623;
+  z-index: 5;
+  box-shadow: 0px -4px 4px 0px rgba(34, 36, 38, 0.12);
 }
 .bill-detail-total p {
-    font-size: 18px;
-    color: #FFFFFF;
-    margin: 0;
-    padding-top: 18px;
-    padding-right: 4px;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin: 0;
+  padding-top: 18px;
+  padding-right: 4px;
 }
 .bill-detail-total a {
-    color: #FFFFFF;
-    margin: 0;
-    position: absolute;
-    font-size: 23px;
-    top: 15px;
-    right: 0;
+  color: #FFFFFF;
+  margin: 0;
+  position: absolute;
+  font-size: 23px;
+  top: 15px;
+  right: 0;
 }
 
 /* PAY */
 .bill-item-price-pay {
-    font-weight: 600;
-    text-align: right;
-    color: #F6A623;
+  font-weight: 600;
+  text-align: right;
+  color: #F6A623;
 }
 .button{
-    background-color: #F6A623;
-    width: 244px;
-    height: 40px;
-    border-radius: 50px;
-    margin: 0 auto;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    display: inline-block;
-    text-decoration: none !Important;
-    vertical-align: middle;
-    line-height: 2.5;
-    margin-top: 24px;
+  background-color: #F6A623;
+  width: 244px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none !Important;
+  vertical-align: middle;
+  line-height: 2.5;
+  margin-top: 24px;
 }
 .title-wrapper-pay {
-    margin-top: 18px;
-    margin-bottom: 16px;
-    padding-left: 0px;
+  margin-top: 18px;
+  margin-bottom: 16px;
+  padding-left: 0px;
 }
 .title-wrapper-pay p {
-    text-align: left;
-    margin: 0;
-    color: #FFFFFF;
-    font-weight: 600;
+  text-align: left;
+  margin: 0;
+  color: #FFFFFF;
+  font-weight: 600;
 }
 
 /* SPENDING */
 .title-spending p{
-    font-size: 40px;
-    color: #FFFFFF;
-    text-align: right;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: right;
 }
 .title-currency p{
-    line-height: 4.5;
+  line-height: 4.5;
 }
 .progress-spent{
-    margin: auto;
+  margin: auto;
 }
 .bar{
-    background-color: rgba(0,0,0,0.12);
-    border-radius: 10px;
-    display: block;
-    width: 240px;
-    height: 10px;
+  background-color: rgba(0,0,0,0.12);
+  border-radius: 10px;
+  display: block;
+  width: 240px;
+  height: 10px;
 }
 .bar-spent{
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    display: block;
-    width: 120px;
-    height: 10px;
-    margin-top: -10px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: block;
+  width: 120px;
+  height: 10px;
+  margin-top: -10px;
 }
 .spent-list{
-    background-color: #FFFFFF;
-    position: relative;
+  background-color: #FFFFFF;
+  position: relative;
 }
 .spent-list-item{
-    padding: 16px 16px;
+  padding: 16px 16px;
 }
 .round-category{
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: #F07272;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #F07272;
 }
 .overview{
-    /*position: absolute;*/
+  /*position: absolute;*/
 }
 .spent-val{
-    text-align: right;
-    color: #EC6161;
+  text-align: right;
+  color: #EC6161;
 }
 .category{
-    font-size: 14px;
-    color: #9B9B9B;
+  font-size: 14px;
+  color: #9B9B9B;
 }
 .spent-item{
-    font-size: 16px;
+  font-size: 16px;
+}
+
+/************* SELECT FRIEND *************/
+.header-select-friend{
+  margin: 56px 0px 8px 0px;
+  color: #FFFFFF;
+}
+.header-select-friend .button{
+  background-color: #F6A623;
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none !Important;
+  vertical-align: middle;
+  line-height: 2.5;
+  font-size: 11px;
+  text-align: center;
+}
+.check-select-friend-wrapper {
+  margin-top: 15px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.search-friend input{
+  width: 280px;
+  padding: 8px 0px;
+  margin-left: 8px;
 }
 
 
 /************* HELPER *************/
 .no-padding {
-    padding: 0;
+  padding: 0;
 }
 .no-padding-left {
-    padding-left: 0;
+  padding-left: 0;
 }
 .no-padding-right {
-    padding-right: 0;
+  padding-right: 0;
 }
 .text-bold {
-    font-weight: bold;
+  font-weight: bold;
 }

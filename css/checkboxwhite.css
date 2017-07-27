@@ -1,0 +1,63 @@
+label {
+    display: inline-block;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+}
+label span {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    transform-origin: center;
+    border: 2px solid #F6A623;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 150ms 200ms, transform 350ms cubic-bezier(.78,-1.22,.17,1.89);
+} 
+label span:before {
+    content: "";
+    width: 0px;
+    height: 2px;
+    border-radius: 2px;
+    background: #000;
+    position: absolute;
+    transform: rotate(46deg);
+    top: 10px;
+    left: 6px;
+    transition: width 50ms ease 50ms;
+    transform-origin: 0% 0%;
+}
+label span:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: #F6A623;
+    position: absolute;
+    transform: rotate(311deg);
+    top: 14px;
+    left: 7px;
+    transition: width 50ms ease;
+    transform-origin: 0% 0%;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + label span {
+    background-color: #F6A623;
+    transform: scale(1.05);
+}
+input[type="checkbox"]:checked + label span:after {
+    width: 10px;
+    background: #F6A623;
+    transition: width 150ms ease 100ms;
+}
+input[type="checkbox"]:checked + label span:before {
+    width: 5px;
+    background: #7BB6D9;
+    transition: width 150ms ease 100ms;
+}
